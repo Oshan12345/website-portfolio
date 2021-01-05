@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.highlighted_name,
+.section_three_experience_subheading {
+  color: rgb(255, 145, 0);
+}
+
+.firstBanner_div,
+.section_three_experience_div1,
+.section_three_experience_div2 {
+  width: 40%;
+  height: 50%;
+  padding: 2%;
+  font-size: 1.2rem;
+  margin: 5%;
+}
+.section_three_experience_div1,
+.section_three_experience_div2 {
+  height: 300px;
+  border-radius: 5px;
+  background: linear-gradient(315deg, #c3c3be, #e8e8e2);
+  box-shadow: -11px -11px 22px #8f8f8b, 11px 11px 22px #ffffff;
+  border-left: 10px solid;
+  border-right: 0px;
+
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 0 100%;
+}
+.firstBanner_div_img {
+  height: 100%;
+  width: 100%;
+}
+.experience {
+  text-align: center;
+}
+.first_banner {
+  display: flex;
+  flex-direction: row;
+  background-image: url(/images/exp-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0% -30%;
+}
+
+.banner_btn_one,
+.banner_btn_two {
+  text-transform: uppercase;
+  padding: 7px 18px;
+  margin-left: 20%;
+  border: 0;
+  font-size: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, rgb(229, 255, 0), rgb(255, 174, 0));
+}
+.section_two {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-image: url(/images/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
+  background-size: 9%;
+}
+.section_three_experience {
+  display: flex;
+  flex-direction: row;
+}
+.paragraph {
+  text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+  .first_banner {
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+    background-image: url(/images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0% -30%;
+  }
+  .firstBanner_div_two {
+    flex: 1;
+  }
+  .firstBanner_div_one {
+    flex: 2;
+  }
+  .firstBanner_div,
+  .section_three_experience_div1,
+  .section_three_experience_div2 {
+    width: 80%;
+    height: 50%;
+    padding: 2%;
+    font-size: 1.2rem;
+    margin: 5%;
+  }
+  .section_two,
+  .section_three_experience {
+    display: flex;
+    flex-direction: column;
+  }
+}
